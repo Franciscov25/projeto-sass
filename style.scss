@@ -19,3 +19,7 @@ $social: (
 h1{
     color: map-get($social, facebook);
 }
+
+p{
+    color: map-get($social, github);
+}
