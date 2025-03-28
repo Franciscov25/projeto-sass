@@ -1,0 +1,21 @@
+body{
+    background-color: #ccc;
+}
+
+// criando variaveis
+$width-rem: 2rem;
+
+
+// MAPs -- bem parecido com objeto
+$social: (
+    facebook: #b45959,
+    github: #4154a7
+);
+
+// utilizando o valor facebook da chave social
+// no arquivo .css, depois de compilado (ctrl-s)
+// aparecerá simplesmente o h1 e o color
+// ou seja, map-get......... = color = (cor definida no valor dentro da chave)
+h1{
+    color: map-get($social, facebook);
+}
